@@ -3,7 +3,8 @@ import java.util.*;
 
 public class Arrays {
 
-    public static void update(int marks[]) {
+    public static void update(int marks[], int nonChangable) {
+        nonChangable = 10;
         for(int i=0; i<marks.length; i++) {
             marks[i] = marks[i] + 1;
         }
@@ -30,11 +31,15 @@ public class Arrays {
 
         // System.out.println("Length of Array : "+marks.length);
 
+        int nonChangable = 5;
         int marks[] = {97, 98, 99};
-        update(marks);
+        update(marks, nonChangable);
+        System.out.println("NonChangable : "+ nonChangable);
         for(int i=0; i<marks.length; i++) {
             System.out.println("Updated marks : "+ marks[i]);
         }
+
+        
         sc.close();
     }
 }
