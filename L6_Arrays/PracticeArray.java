@@ -117,7 +117,9 @@ public class PracticeArray {
         // System.out.println("Profit = "+sellBuyStocks(price));
 
         // 4th -> traping rainwater problem
-        int barLevel[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-        System.out.println("Traped Rainwater = "+traped_rainwater(barLevel));
+        // int barLevel[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+        // System.out.println("Traped Rainwater = "+traped_rainwater(barLevel));
+
+        // 5th -> return triplet numbers, number should be distinct amoung those triplet and their sum should be zero
     }
 }
