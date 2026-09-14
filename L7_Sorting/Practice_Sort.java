@@ -54,11 +54,11 @@ public class Practice_Sort {
         }
 
         // sorting
-        int j = arr.length-1;
-        for(int i=0; i<countArray.length; i++) {
+        int j = 0;
+        for(int i=countArray.length-1; i>=0; i--) {
             while(countArray[i]>0) {
                 arr[j] = i;
-                j--;
+                j++;
                 countArray[i]--;
             }
         }
