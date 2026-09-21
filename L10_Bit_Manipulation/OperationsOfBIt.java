@@ -37,11 +37,19 @@ public class OperationsOfBIt {
         int bitMask = (-1)<<i;  // or bitMask = (~0)<<i;
         return n & bitMask;
     }
+
+    public static int clear_range_bits(int n, int i, int j) {
+        int a = (~0)<<(j-1);
+        int b = (1<<i)-1;
+        int bitMask = a | b;
+        return n & bitMask;
+    }
     public static void main(String[] args) {
         // System.out.println(get_ith_bit(15, 2));
         // System.out.println(set_ith_bit(10, 2));
         // System.out.println(clear_ith_bit(10, 1));
         // System.out.println(update_ith_bit(10, 2, 1));
-        System.out.println(last_ith_bit_clear(15, 2));
+        // System.out.println(last_ith_bit_clear(15, 2));
+        System.out.println(clear_range_bits(10, 2, 4));
     }
 }
