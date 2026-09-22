@@ -1,4 +1,4 @@
-package Java.L10_Bit_Manipulation;
+
 
 public class Check_Even_Odd_Bit {
     public static void oddOrEven(int n) {

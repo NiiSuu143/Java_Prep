@@ -1,4 +1,4 @@
-package Java.L10_Bit_Manipulation;
+
 
 public class LowercaseToUpper {
     public static void main(String[] args) {

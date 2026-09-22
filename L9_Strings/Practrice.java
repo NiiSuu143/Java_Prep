@@ -1,4 +1,4 @@
-package Java.L9_Strings;
+
 import java.util.*;
 
 public class Practrice {

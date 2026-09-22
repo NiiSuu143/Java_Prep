@@ -1,4 +1,4 @@
-package Java.L6_Arrays;
+
 
 public class PairOfArray {
 

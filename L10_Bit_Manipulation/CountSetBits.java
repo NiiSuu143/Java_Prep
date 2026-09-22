@@ -1,4 +1,4 @@
-package Java.L10_Bit_Manipulation;
+
 
 public class CountSetBits {
     public static int countSetBits(int n) {

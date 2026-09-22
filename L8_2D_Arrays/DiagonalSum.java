@@ -1,4 +1,4 @@
-package Java.L8_2D_Arrays;
+
 
 public class DiagonalSum {
     public static int diagonal(int matrix[][]) {

@@ -1,4 +1,4 @@
-package Java.L10_Bit_Manipulation;
+
 
 public class OperationsOfBIt {
     public static int get_ith_bit(int n, int i) {

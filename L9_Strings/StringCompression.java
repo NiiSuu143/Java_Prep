@@ -1,4 +1,4 @@
-package Java.L9_Strings;
+
 
 public class StringCompression {
     public static String commpress(String str) {

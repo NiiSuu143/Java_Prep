@@ -1,4 +1,4 @@
-package Java.L9_Strings;
+
 
 public class PalindromeString {
     public static boolean checkPalindrome1(String str) {

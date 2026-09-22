@@ -1,4 +1,4 @@
-package Java.L8_2D_Arrays;
+
 
 public class Practice_2D_Arrays {
     public static void print_7s(int arr[][], int target) {

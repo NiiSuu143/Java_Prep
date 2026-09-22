@@ -1,4 +1,4 @@
-package Java.L6_Arrays;
+
 
 public class TrappingRainwater {
     public static void trapedWater(int height[]) {

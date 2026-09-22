@@ -1,4 +1,4 @@
-package Java.L10_Bit_Manipulation;
+
 
 public class BitManipulation {
     public static void main(String[] args) {

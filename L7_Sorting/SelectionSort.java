@@ -1,4 +1,4 @@
-package Java.L7_Sorting;
+
 
 public class SelectionSort {
     public static void selection(int arr[]) {

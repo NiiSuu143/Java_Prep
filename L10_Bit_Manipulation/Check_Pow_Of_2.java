@@ -1,4 +1,4 @@
-package Java.L10_Bit_Manipulation;
+
 
 public class Check_Pow_Of_2 {
     public static void checkPowOf2(int n) {

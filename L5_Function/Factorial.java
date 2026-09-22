@@ -1,4 +1,4 @@
-package Java.L5_Function;
+
 
 public class Factorial {
 

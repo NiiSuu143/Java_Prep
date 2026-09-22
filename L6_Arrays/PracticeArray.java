@@ -1,4 +1,4 @@
-package Java.L6_Arrays;
+
 
 public class PracticeArray {
     public static int sellBuyStocks(int price[]) {

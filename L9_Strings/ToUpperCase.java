@@ -1,4 +1,4 @@
-package Java.L9_Strings;
+
 
 public class ToUpperCase {
     public static String toUpperCase(String str) {

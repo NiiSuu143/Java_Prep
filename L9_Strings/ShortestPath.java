@@ -1,4 +1,4 @@
-package Java.L9_Strings;
+
 
 public class ShortestPath {
     public static int getShortestPath(String path) {

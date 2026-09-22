@@ -1,4 +1,4 @@
-package Java.L6_Arrays;
+
 
 public class SubArray {
     public static void printSubarray(int arr[]) {

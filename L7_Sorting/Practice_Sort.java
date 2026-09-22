@@ -1,4 +1,4 @@
-package Java.L7_Sorting;
+
 
 public class Practice_Sort {
     public static void bubbleSort(int arr[]) {

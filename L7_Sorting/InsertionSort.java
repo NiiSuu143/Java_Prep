@@ -1,4 +1,4 @@
-package Java.L7_Sorting;
+
 import java.util.Arrays;
 
 public class InsertionSort {

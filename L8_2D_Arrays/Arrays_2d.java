@@ -1,4 +1,4 @@
-package Java.L8_2D_Arrays;
+
 import java.util.Scanner;
 
 public class Arrays_2d {

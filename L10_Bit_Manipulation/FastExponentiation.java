@@ -1,4 +1,4 @@
-package Java.L10_Bit_Manipulation;
+
 
 public class FastExponentiation {
     public static int fastExpo(int a, int n) {

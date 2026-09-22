@@ -1,4 +1,4 @@
-package Java.L4_Pattern;
+
 
 public class AdvancedPattern {
     public static void hollow_rectangle(int totRow, int totCol) {

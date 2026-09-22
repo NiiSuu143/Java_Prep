@@ -1,4 +1,4 @@
-package Java.L8_2D_Arrays;
+
 
 public class Spiral_Matrix {
     public static void printSpiral(int matrix[][]) {

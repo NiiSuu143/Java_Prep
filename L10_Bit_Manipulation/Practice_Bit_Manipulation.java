@@ -1,4 +1,4 @@
-package Java.L10_Bit_Manipulation;
+
 
 public class Practice_Bit_Manipulation {
     public static void swapNum(int a, int b) {

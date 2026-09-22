@@ -1,4 +1,4 @@
-package Java.Placement;
+
 
 import java.util.Scanner;
 

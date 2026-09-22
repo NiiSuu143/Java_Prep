@@ -1,4 +1,4 @@
-package Java.L5_Function;
+
 import java.util.*;
 
 public class PrimeNumber {
