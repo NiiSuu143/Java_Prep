@@ -1,0 +1,9 @@
+package Java.L10_Bit_Manipulation;
+
+public class LowercaseToUpper {
+    public static void main(String[] args) {
+        for(char ch = 'a'; ch<= 'z'; ch++) {
+            System.out.print((char)(ch & (~' '))+ " ");
+        }
+    }
+}

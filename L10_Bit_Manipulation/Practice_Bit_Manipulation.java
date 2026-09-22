@@ -31,5 +31,9 @@ public class Practice_Bit_Manipulation {
 
         // 3rd Question -> Add 1 to an integer using Bit Manipulation (Hint: using Bitwise NOT operator)
         add_1_toInt(6, -4, 0);
+
+        
+        // Convert uppercase characters to lowercase using bits (Tricky one)
+        
     }
 }
