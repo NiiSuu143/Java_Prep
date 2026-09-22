@@ -1,6 +1,4 @@
-
-import java.util.*;
-
+import java.util.Arrays;
 public class Practrice {
     public static int countLowercaseVowels(String useStr) {
         int count = 0;

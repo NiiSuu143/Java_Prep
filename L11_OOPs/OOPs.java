@@ -1,5 +1,3 @@
-
-
 public class OOPs {
     public static void main(String args[]) {
         Pen p1 = new Pen(); // created a object called p1
