@@ -10,7 +10,7 @@ public class Inheritance {
     }
 }
 
-class Animal {
+class Animal1 {
     String color;
     void eat() {
         System.out.println("eats");
@@ -24,17 +24,17 @@ class Animal {
 
 
 // // Hierarchial Inheritance
-// class Mammal extends Animal {
+// class Mammal extends Animal1 {
 //     void walk() {
 //         System.out.println("walks");
 //     }
 // }
-// class Fish extends Animal {
+// class Fish extends Animal1 {
 //     void swim() {
 //         System.out.println("swim");
 //     }
 // }
-// class Bird extends Animal {
+// class Bird extends Animal1 {
 //     void fly() {
 //         System.out.println("fly");
 //     }
@@ -42,8 +42,8 @@ class Animal {
 
 
 
-// // Multi level inheritance from animal class
-// class Mammals extends Animal {
+// // Multi level inheritance from animal1 class
+// class Mammals extends Animal1 {
 //     int legs;
 // }
 // class Dog extends Mammals {
@@ -53,7 +53,7 @@ class Animal {
 
 
 // // Derived class / subclass
-// class Fish extends Animal {
+// class Fish extends Animal1 {
 //     int fins;
 //     void swim() {
 //         System.out.println("swims in water");

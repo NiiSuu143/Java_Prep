@@ -1,6 +1,6 @@
 public class OOPs {
     public static void main(String args[]) {
-        Pen p1 = new Pen(); // created a object called p1
+        Pens p1 = new Pens(); // created a object called p1
         p1.setColor("Blue");
         System.out.println(p1.color);
         p1.setTip(5);
@@ -24,7 +24,7 @@ class BankAccount {
     }
 }
 
-class Pen {
+class Pens {
     String color;
     int tip;
 
@@ -37,7 +37,7 @@ class Pen {
     }
 }
 
-class Student {
+class Students {
     String name;
     int age;
     float percentage; 

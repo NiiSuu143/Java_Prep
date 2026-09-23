@@ -17,12 +17,12 @@ public class Polymorphism {
 
 // run time polymorphism
 // methods overriding or function overriding
-class Animal {
+class Animals {
     void eat() {
         System.out.println("eats anythings...");
     }
 }
-class Deer extends Animal {
+class Deer extends Animals {
     void eat() {
         System.out.println("eats grass...");
     }
