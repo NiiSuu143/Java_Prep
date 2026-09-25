@@ -37,7 +37,9 @@ class Complex {
             System.out.println(imag + "i");
         } else if (imag == 0 && real != 0) {
             System.out.println(real);
-        } else {
+        } else if(imag < 0) {
+            System.out.println(real + " - " + (-imag) + "i");
+        }else {
             System.out.println(real + "+" + imag + "i");
         }
     }
