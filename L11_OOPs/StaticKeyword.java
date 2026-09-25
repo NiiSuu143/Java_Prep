@@ -1,16 +1,16 @@
 public class StaticKeyword {
     public static void main(String args[]) {
-        Students s1 = new Students();
-        s1.schoolName = "RIT";
+        // Students s1 = new Students();
+        // s1.schoolName = "RIT";
 
-        Students s2 = new Students();
-        System.out.println(s2.schoolName);
+        // Students s2 = new Students();
+        // System.out.println(s2.schoolName);
 
-        // if we change it from s3 then it will changes for all student
-        Students s3 = new Students();
-        s3.schoolName = "ABC";
+        // // if we change it from s3 then it will changes for all student
+        // Students s3 = new Students();
+        // s3.schoolName = "ABC";
 
-        System.out.println(s2.schoolName);  // output -> ABC
+        // System.out.println(s2.schoolName);  // output -> ABC
     }
 }
 
