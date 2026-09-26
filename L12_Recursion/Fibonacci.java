@@ -1,4 +1,4 @@
-// time complexity = O(2^n)
+// time complexity = O(2^n) but it can be optimized to O(n) by using dynamic programming
 // space complexity = O(n)
 public class Fibonacci {
     public static int fibo(int n) {
