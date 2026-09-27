@@ -2,7 +2,7 @@ public class RemoveDuplicate {
     public static void removeDupli(String str, int i, StringBuilder newStr, boolean[] map) {
         // base case
         if(i == str.length()) {
-            System.out.println(newStr);
+            System.out.println(newStr);     // should not add .toString() -> it is used when we need to compare with a normal string with StringBuilder
             return;
         }
         // kaam
