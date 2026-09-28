@@ -12,7 +12,6 @@ public class RemoveDuplicate {
             map[j] = true;
             newStr.append(ch);
         }
-
         removeDupli(str, i+1, newStr, map);
 
         // if(map[ch - 'a'] == true) {
