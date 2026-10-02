@@ -53,6 +53,7 @@ public class StringArr_MergeSort {
         }
     }
     public static void main(String[] args) {
+        // Practice Question 1 -> Apply Merge sort to sort an array of Strings. (Assume that all the characters in all the Strings are in lowercase). 
         String[] str = {"sun", "earth", "mars", "mercury"};
         mergeSort(str, 0, str.length-1);
         printArr(str);
