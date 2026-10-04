@@ -8,5 +8,6 @@ public class OrderComplexityAnalysis {
          * -> now some loop analysis is done and learned
          * *****************/
         System.out.println("Oyasumi....");
+        System.out.println("should not break my streak");
     }
 }
