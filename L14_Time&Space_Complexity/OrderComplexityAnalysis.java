@@ -10,7 +10,7 @@ public class OrderComplexityAnalysis {
         System.out.println("Oyasumi....");
         System.out.println("should not break my streak");
 
-        
+
         /**************
          * Now recursion analysis for time and space complexity is started...
          * In this, I learned a lot about the worst and base case of recursion.
@@ -20,5 +20,16 @@ public class OrderComplexityAnalysis {
          * 2. Recurrence Relation/equation
          * 3. Space Complexity = (max depth * memory in each call)
          * ************** */
+
+
+        /*****************
+         * Analysis for MergeSort() ->
+         * It is a little tricky coz, it has two different time complexity
+         * One is for mergeSort() and one is for merge() function that merge the element back to original as sorted...
+         * For merge() ->
+         * it has 3 while loop = O(n)
+         * and 1 for loop = O(n)
+         * Thus TC of merge() is O(n)
+         * ******************/
     }
 }
