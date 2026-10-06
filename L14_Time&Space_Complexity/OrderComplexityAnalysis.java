@@ -30,7 +30,15 @@ public class OrderComplexityAnalysis {
          * it has 3 while loop = O(n)
          * and 1 for loop = O(n)
          * Thus TC of merge() is O(n)
-         * 
+         * And for the recursion part in recursion tree, the depth of the tree is logn levels
+         * So, logn * n -> 
+         * Time complexity = O(nlogn)
+         * Space complexity = O(n)
+         * ******************/
+
+
+
+        /******************
          * 
          * 
          * ******************/
