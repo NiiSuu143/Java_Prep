@@ -39,8 +39,12 @@ public class OrderComplexityAnalysis {
 
 
         /******************
-         * 
-         * 
+         * Power Function Analysis ->
+         * There are many questions like it might see as a optimized time complexity one.
+         * But it is not.... 
+         * In power question, even when a^n = a^n/2 * a^n/2 is not optimized if we call two different recursionn
+         * We should do it like int halfPower = f(a, n/2); and int halfPowerSq = halfPower * halfPower
+         * It will optimized the code form O(n) to O(logn)
          * ******************/
     }
 }
