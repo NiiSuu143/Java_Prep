@@ -46,5 +46,18 @@ public class OrderComplexityAnalysis {
          * We should do it like int halfPower = f(a, n/2); and int halfPowerSq = halfPower * halfPower
          * It will optimized the code form O(n) to O(logn)
          * ******************/
+
+
+
+        /******************
+         * How to approach a question in interview & online contest ?
+         * 1. Burte force (logical)
+         * 2. Optimized -> in terms of time
+         * 
+         * Online judge :
+         * He/she gives you 1 second to solve the 10^8 operation
+         * So, we should write the program in optimal & optimized way....
+         * to prevent from (time limit extend error in online contest & technical interview)
+         * ********************/
     }
 }
