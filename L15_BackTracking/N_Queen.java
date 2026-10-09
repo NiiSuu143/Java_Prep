@@ -60,7 +60,12 @@ public class N_Queen {
                 board[i][j] = 'x';
             }
         }
-
         nQueen(board, 0);
+
+        /*************
+         * Time complexity -> 
+         * it might be O(n^n) but not this one
+         * It's actual time complexity is O(n!)
+         * *************/
     }
 }
