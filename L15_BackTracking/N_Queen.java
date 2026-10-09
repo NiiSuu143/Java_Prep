@@ -37,7 +37,9 @@ public class N_Queen {
     public static void nQueen(char[][] board, int row) {
         // base case
         if (row == board.length) {
-            printBoard(board);
+            // printBoard(board);
+            // total no. of ways to solve the n-queen problem
+            count++;
             return;
         }
 
@@ -51,6 +53,7 @@ public class N_Queen {
         }
     }
 
+    static int count = 0;
     public static void main(String[] args) {
         int n = 4;
         char[][] board = new char[n][n];
@@ -61,6 +64,7 @@ public class N_Queen {
             }
         }
         nQueen(board, 0);
+        System.out.println("Total no. of ways to solve n queens = "+count);
 
         /*************
          * Time complexity -> 
