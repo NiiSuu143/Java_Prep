@@ -17,5 +17,10 @@ public class GridWays {
     public static void main(String[] args) {
         int n = 3, m = 3;
         System.out.println(gridWays(0, 0, n, m));
+
+        /******************
+         * Time complexity of this code is O(2^(n+m))
+         * Since it is a exponential one.. It is very slow for big data
+         * *******************/
     }
 }
