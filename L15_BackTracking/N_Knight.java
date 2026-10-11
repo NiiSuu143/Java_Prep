@@ -59,9 +59,13 @@ public class N_Knight {
                 board[i][j] = 'x';
             }
         }
+
+        long startTime = System.nanoTime();
         nKnight(board, 0);
+        long endTime = System.nanoTime();
+        
         System.out.println("Total no. of ways = "+count);
-        // printBoard(board);
+        System.out.println("Execution time: " + (endTime - startTime) / 1000000.0 + " ms");
 
         /**************
          * Time complexity = O(2^(n^2))
