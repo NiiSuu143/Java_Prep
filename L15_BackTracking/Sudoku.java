@@ -54,6 +54,11 @@ public class Sudoku {
                 if(sudokuSolver(sudoku, nextRow, nextCol)) {    // if it is true -> solution exist
                     return true;
                 }
+                /**********
+                 * Because it failed, you must undo your choice by setting the cell back to 0
+                 * This leaves the cell clean so the for loop can move on to test the next digit 
+                 * (e.g., if trying 3 failed, the loop will now test 4).
+                 * *********/ 
                 sudoku[row][col] = 0;
             }
         }
