@@ -17,14 +17,14 @@ public class Practice_Question1 {
             return;
         }
 
-        // Mark current cell as part of the path in the solution matrix
-        solution[row][col] = 1;
-
         // base case
         if (row == n - 1 && col == n - 1 && maze[row][col] == 1) {
             printMaze(solution); // Print this path's grid
             return;
         }
+        
+        // Mark current cell as part of the path in the solution matrix
+        solution[row][col] = 1;
 
         // 4. Try all 4 directions explicitly
         mazeSolver(maze, row + 1, col, solution); // Down
