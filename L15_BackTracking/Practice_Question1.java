@@ -8,25 +8,23 @@ public class Practice_Question1 {
             System.out.println();
         }
     }
-    
+
     public static void mazeSolver(int[][] maze, int row, int col, int[][] solution) {
         int n = maze.length;
-
-        // base case
-        if (row == n - 1 && col == n - 1 && maze[row][col] == 1) {
-            solution[row][col] = 1; // Mark the final step
-            printMaze(solution); // Print this path's grid
-            solution[row][col] = 0; // Unmark so it can backtrack properly
-            return;
-        }
-
-        // 2. Boundary, Wall, and Already Visited Check
+        
+        //  Boundary, Wall, and Already Visited Check
         if (row < 0 || col < 0 || row >= n || col >= n || maze[row][col] == 0 || solution[row][col] == 1) {
             return;
         }
 
-        // 3. Mark current cell as part of the path in the solution matrix
+        // Mark current cell as part of the path in the solution matrix
         solution[row][col] = 1;
+
+        // base case
+        if (row == n - 1 && col == n - 1 && maze[row][col] == 1) {
+            printMaze(solution); // Print this path's grid
+            return;
+        }
 
         // 4. Try all 4 directions explicitly
         mazeSolver(maze, row + 1, col, solution); // Down
