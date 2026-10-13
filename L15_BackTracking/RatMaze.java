@@ -1,4 +1,4 @@
-public class Practice_Question1 {
+public class RatMaze {
     public static void printMaze(int[][] maze) {
         System.out.println("--------Rat in a Maze------");
         for(int i=0; i<maze.length; i++) {
