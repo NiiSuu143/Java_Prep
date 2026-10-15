@@ -43,6 +43,14 @@ public class Test_ArrayList {
         list.add(1, 8);
         System.out.println(list);
 
+        // size of the ArrayList
+        System.out.println(list.size());
+
+        // print arraylist
+        for(int i=0; i<list.size(); i++) {
+            System.out.print(list.get(i)+" ");
+        }
+
         list1.add("Konichiwa");
         list2.add(true);
 
