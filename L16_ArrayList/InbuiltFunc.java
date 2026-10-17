@@ -18,5 +18,13 @@ public class InbuiltFunc {
         // Collections.reverseOrder() -> Comparator(functions that defind logic)
         System.out.println(list);
 
+        // Implementation of ArrayList
+        /*********
+         * in function, first crate a normal array with specific size
+         * then when it is fully filled or half filled
+         * it will create a double size array and copy the element from prev. one
+         * the "double size which is created" varies to different java versions
+         * ************/
+
     }
 }
