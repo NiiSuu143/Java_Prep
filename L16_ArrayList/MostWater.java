@@ -1,4 +1,3 @@
-import java.time.chrono.HijrahEra;
 import java.util.ArrayList;
 
 public class MostWater {
@@ -16,7 +15,7 @@ public class MostWater {
         return maxWater;
     }
 
-    // 2 pointer Approach
+    // 2 pointer Approach -> O(n)
     public static int optimizedStoreWater(ArrayList<Integer> height) {
         int maxWater = 0;
         int Lp = 0, Rp = height.size()-1;
