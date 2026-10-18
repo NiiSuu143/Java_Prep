@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class MostWater {
     public static int storeWater(ArrayList<Integer> height) {
         int maxWater = 0;
-        // brute force
+        // brute force -> O(n^2)
         for(int i=0; i<height.size(); i++) {
             for(int j=i+1; j<height.size(); j++) {
                 int ht = Math.min(height.get(i), height.get(j));
