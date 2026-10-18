@@ -1,3 +1,4 @@
+import java.time.chrono.HijrahEra;
 import java.util.ArrayList;
 
 public class MostWater {
@@ -14,6 +15,27 @@ public class MostWater {
         }
         return maxWater;
     }
+
+    // 2 pointer Approach
+    public static int optimizedStoreWater(ArrayList<Integer> height) {
+        int maxWater = 0;
+        int Lp = 0, Rp = height.size()-1;
+        while(Lp < Rp) {
+            // calculate water area
+            int ht = Math.min(height.get(Lp), height.get(Rp));
+            int width = Rp - Lp;
+            int currWater = ht * width;
+            maxWater = Math.max(maxWater, currWater);
+
+            // update pointer
+            if(height.get(Lp) < height.get(Rp)) {
+                Lp++;
+            } else {
+                Rp--;
+            }
+        }
+        return maxWater;
+    }
     public static void main(String[] args) {
         ArrayList<Integer> height = new ArrayList<>();
         height.add(1);
@@ -26,6 +48,7 @@ public class MostWater {
         height.add(3);
         height.add(7);
 
-        System.out.println("height = "+storeWater(height));
+        // System.out.println("height = "+storeWater(height));
+        System.out.println("height = "+optimizedStoreWater(height));
     }
 }
