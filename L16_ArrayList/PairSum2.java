@@ -41,5 +41,6 @@ public class PairSum2 {
 
         int target = 16;
         System.out.println(optimizedPairSum2(list, target));
+        // Next is practice question
     }
 }
