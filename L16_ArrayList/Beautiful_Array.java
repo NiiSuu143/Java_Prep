@@ -22,6 +22,11 @@ public class Beautiful_Array {
         return ans;
     }
 
+    public void divideConque(int start, int increment, ArrayList<Integer> res, int n) {
+        // we can be solved this problem with divide and conquer rule and recursion method..
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         System.out.println(beautifulArr(4));
     }
