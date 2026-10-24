@@ -6,10 +6,13 @@ public class Beautiful_Array {
         ans.add(1);
         for (int i = 2; i <= n; i++) {
             ArrayList<Integer> temp = new ArrayList<>();
+            // for even num.
             for (Integer e : ans) {
                 if (2 * e <= n)
                     temp.add(e * 2);
             }
+
+            // for odd num.
             for (Integer e : ans) {
                 if (2 * e - 1 <= n)
                     temp.add(e * 2 - 1);
