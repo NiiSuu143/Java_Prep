@@ -41,6 +41,8 @@ public class Beautiful_Array {
     public static void main(String[] args) {
         // using normal iteration
         // System.out.println(beautifulArr(4));
+
+        // using divide and conquer rule and recursion
         System.out.println(beautifulArray(4));;
         
     }
