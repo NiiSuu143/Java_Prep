@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Beautiful_Array {
-    public static  ArrayList<Integer> beautifulArr(int n) {
+    public static ArrayList<Integer> beautifulArr(int n) {
         ArrayList<Integer> ans = new ArrayList<>();
         ans.add(1);
         for (int i = 2; i <= n; i++) {
@@ -22,12 +22,25 @@ public class Beautiful_Array {
         return ans;
     }
 
-    public void divideConque(int start, int increment, ArrayList<Integer> res, int n) {
+    public static ArrayList<Integer> beautifulArray(int n) {
+        ArrayList<Integer> res = new ArrayList<>();
+        divideConque(1, 1, res, n);
+        return res;
+    }
+
+    public static void divideConque(int start, int increment, ArrayList<Integer> res, int n) {
         // we can be solved this problem with divide and conquer rule and recursion method..
-        System.out.println();
+        if (start + increment > n) {
+            res.add(start);
+            return;
+        }
+        divideConque(start, 2 * increment, res, n);
+        divideConque(start + increment, 2 * increment, res, n);
     }
 
     public static void main(String[] args) {
-        System.out.println(beautifulArr(4));
+        // System.out.println(beautifulArr(4));
+        System.out.println(beautifulArray(4));;
+        
     }
 }
