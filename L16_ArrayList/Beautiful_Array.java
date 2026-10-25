@@ -39,6 +39,7 @@ public class Beautiful_Array {
     }
 
     public static void main(String[] args) {
+        // using normal iteration
         // System.out.println(beautifulArr(4));
         System.out.println(beautifulArray(4));;
         
