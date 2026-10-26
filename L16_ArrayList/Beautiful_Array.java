@@ -38,6 +38,9 @@ public class Beautiful_Array {
         divideConque(start + increment, 2 * increment, res, n);
     }
 
+    /**********
+     * Revised it and learn 100% for sure....
+     * ************/
     public static void main(String[] args) {
         // using normal iteration
         // System.out.println(beautifulArr(4));
