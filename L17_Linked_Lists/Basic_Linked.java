@@ -14,10 +14,15 @@ public class Basic_Linked {
         li.add(3);
         System.out.println(li);
 
+        // update
+        li.set(0, 5);
+        System.out.println(li);
+
         // remove operation
         li.remove(1);
         System.out.println(li);
 
+        // we can use iteration in it as normal loop
 
     }
 }
