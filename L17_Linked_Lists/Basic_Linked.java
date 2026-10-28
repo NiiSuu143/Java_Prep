@@ -14,5 +14,10 @@ public class Basic_Linked {
         li.add(3);
         System.out.println(li);
 
+        // remove operation
+        li.remove(1);
+        System.out.println(li);
+
+
     }
 }
