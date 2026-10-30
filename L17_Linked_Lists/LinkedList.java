@@ -151,6 +151,20 @@ public class LinkedList {
     }
 
 
+    // reverse of linked list -> time complexity is O(n)
+    public void reverse() {
+        Node prev = null;
+        Node curr = tail = head;    // pre initialized the tail as head (we r doing reverse)
+        Node next;
+        while(curr != null) {
+            next = curr.next;
+            curr.next = prev;   // actual reverse step
+            prev = curr;    // curr becomes prev
+            curr = next;    // next becomes curr
+        }
+        head = prev;    // because curr becomes null at the end of loop
+    }
+
 
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
@@ -175,5 +189,9 @@ public class LinkedList {
 
         // search key using recursion
         System.out.println("Found at index "+ ll.recurSearch(4));
+
+        // reverse linked list
+        ll.reverse();
+        ll.print();
     }
 }
