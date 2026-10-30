@@ -127,6 +127,29 @@ public class LinkedList {
         return -1;
     }
 
+    // by using recursion
+    public int helper(Node head, int key) { // time complexity -> O(n)
+        // base case
+        if(head == null) {
+            return -1;
+        }
+        
+        // kaam or recursion
+        if(head.data == key) {
+            return 0;
+        }
+        int idx = helper(head.next, key);
+        if(idx == -1) {
+            return -1;
+        }
+
+        return idx+1;
+    }
+
+    public int recurSearch(int key) {
+        return helper(head, key);
+    }
+
 
 
     public static void main(String[] args) {
@@ -138,16 +161,19 @@ public class LinkedList {
         ll.add(2, 9);
         ll.print();
 
-        // remove first 
-        ll.rmoveFirst();
-        ll.print();
+        // // remove first 
+        // ll.rmoveFirst();
+        // ll.print();
 
-        // remove last
-        ll.removeLast();
-        ll.print();
+        // // remove last
+        // ll.removeLast();
+        // ll.print();
         System.out.println("Size of linked list = "+size);
 
         // search key
         System.out.println("Found at index "+ll.itrSearch(4));
+
+        // search key using recursion
+        System.out.println("Found at index "+ ll.recurSearch(4));
     }
 }
