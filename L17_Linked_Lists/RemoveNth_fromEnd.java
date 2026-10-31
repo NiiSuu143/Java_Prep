@@ -74,6 +74,7 @@ public class RemoveNth_fromEnd {
         li.print();
 
         li.removeNth_end(3);
+        li.removeNth_end(1);
         li.print();
     }
 }
