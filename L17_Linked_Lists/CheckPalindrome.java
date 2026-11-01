@@ -35,8 +35,8 @@ public class CheckPalindrome {
         System.out.println("null");
     }
 
-    // slow-fast approach ->  to find mid
-    public Node findMid(Node head) {
+    // Step 1. slow-fast approach ->  to find mid
+    public Node findMid(Node head) {    // helper funciton
         Node slow = head;
         Node fast = head;
       
@@ -48,6 +48,40 @@ public class CheckPalindrome {
         return slow;
     }
 
+    public boolean checkPalindrome() {
+        if(head == null || head.next == null) {
+            return true;
+        }
+
+        // Step1 -> find mid
+        Node midNode = findMid(head);
+        
+        // Step2 -> reverse 2nd half
+        Node prev = null;
+        Node curr = midNode;
+        Node next;
+        while(curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        Node right = prev;  // right half head
+        Node left = head;
+        
+        // Strp3 -> check left half & right half
+        while(right != null) {
+            if(left.data != right.data) {
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+        }
+
+        return true;
+    }
+
     public static void main(String[] args) {
         CheckPalindrome newList = new CheckPalindrome();
         newList.addFirst(1);
@@ -57,6 +91,7 @@ public class CheckPalindrome {
 
         // print linked list
         newList.print();
+        System.out.println(newList.checkPalindrome());
 
     }
 }
