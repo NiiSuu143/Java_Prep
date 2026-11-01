@@ -49,6 +49,7 @@ public class CheckPalindrome {
     }
 
     public boolean checkPalindrome() {
+        // if linked list is empty
         if(head == null || head.next == null) {
             return true;
         }
