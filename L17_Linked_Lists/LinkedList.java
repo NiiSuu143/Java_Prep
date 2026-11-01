@@ -175,13 +175,13 @@ public class LinkedList {
         ll.add(2, 9);
         ll.print();
 
-        // // remove first 
-        // ll.rmoveFirst();
-        // ll.print();
+        // remove first 
+        ll.rmoveFirst();
+        ll.print();
 
-        // // remove last
-        // ll.removeLast();
-        // ll.print();
+        // remove last
+        ll.removeLast();
+        ll.print();
         System.out.println("Size of linked list = "+size);
 
         // search key
