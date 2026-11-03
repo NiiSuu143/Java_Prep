@@ -106,5 +106,10 @@ public class MergeSortLL {
 
         head = ll.mergeSort(head);
         ll.print();
+        
+        /***********
+         * Time complexity of this is O(nlogn)
+         * which is same as the normal merged sort
+         * ************/
     }
 }
