@@ -58,7 +58,8 @@ public class DetectLoop {
         head.next.next = new Node(3);
         head.next.next.next = head;
 
-        // 1 -> 2 -> 3 -> 1
+        // it is like this one which is a loop
+        // 1 -> 2 -> 3 -> 1 
         System.out.println(isCycle());
     }
 }
