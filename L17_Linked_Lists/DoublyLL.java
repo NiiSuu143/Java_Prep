@@ -58,7 +58,7 @@ public class DoublyLL {
     public int removeFirst() {
         // if there is no node in doubly linked list
         if(head == null) {
-            System.out.println("Linked list is empty...");
+            System.out.println("Doubly linked list is empty...");
             return Integer.MIN_VALUE;
         }
         
@@ -75,6 +75,28 @@ public class DoublyLL {
         size--;
         return val;
     }
+
+    // remove last
+    public int removeLast() {
+        // if there is no node inside the linked list
+        if(head == null) {
+            System.out.println("Doubly linked list is empty...");
+        }
+
+        // if there is only one node 
+        if(size == 1) {
+            int val = tail.data;
+            head = tail = null;
+            size--;
+            return val;
+        }
+
+        int val = tail.data;
+        tail.prev.next = null;
+        tail.prev = null;
+        size--;
+        return val;
+    }   
     public static void main(String[] args) {
         DoublyLL dl = new DoublyLL();
         dl.addFirst(5);
@@ -91,5 +113,11 @@ public class DoublyLL {
         dl.removeFirst();
         dl.print();
         System.out.println("Size = "+size);
+        
+        // remove last
+        dl.removeLast();
+        dl.print();
+        System.out.println("Size = "+size);
+        
     }
 }
