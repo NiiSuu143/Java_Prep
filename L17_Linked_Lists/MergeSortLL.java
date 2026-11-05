@@ -15,7 +15,7 @@ public class MergeSortLL {
         // create new node
         Node newNode = new Node(data);
         if(head == null) {
-            head = newNode;
+            head = tail = newNode;
             return ;
         }
 
