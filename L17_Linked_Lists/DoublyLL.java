@@ -32,12 +32,28 @@ public class DoublyLL {
     public void print() {
         Node temp = head;
         while(temp != null) {
-            System.out.print(temp.data+" -> ");
+            System.out.print(temp.data+" <-> ");
             temp = temp.next;
         }
         System.out.println("null");
     }
 
+
+    // remove first
+    public void removeFirst() {
+        // if there is only one node in the linked list
+        if(size == 0) {
+            System.out.println("Linked list is empty...");
+            return ;
+        } else if(size == 1) {
+            // int val = head.data;
+            head = tail = null;
+            size = 0;
+            return ;
+        }
+        head = head.next;
+        size--;
+    }
     public static void main(String[] args) {
         DoublyLL dl = new DoublyLL();
         dl.addFirst(5);
@@ -47,5 +63,11 @@ public class DoublyLL {
         dl.addFirst(1);
 
         dl.print();
+        System.out.println("Size = "+size);
+        
+        // removeFirst
+        dl.removeFirst();
+        dl.print();
+        System.out.println("Size = "+size);
     }
 }
