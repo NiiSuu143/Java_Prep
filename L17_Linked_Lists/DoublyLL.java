@@ -40,19 +40,25 @@ public class DoublyLL {
 
 
     // remove first
-    public void removeFirst() {
-        // if there is only one node in the linked list
-        if(size == 0) {
+    public int removeFirst() {
+        // if there is no node in doubly linked list
+        if(head == null) {
             System.out.println("Linked list is empty...");
-            return ;
-        } else if(size == 1) {
-            // int val = head.data;
-            head = tail = null;
-            size = 0;
-            return ;
+            return Integer.MIN_VALUE;
         }
+        
+        // if there is only one node in the linked list
+        if(size == 1) {
+            int val = head.data;
+            head = tail = null;
+            size--;
+            return val;
+        }
+        int val = head.data;
         head = head.next;
+        head.prev = null;   // need to remove this prev node also to remove it completely
         size--;
+        return val;
     }
     public static void main(String[] args) {
         DoublyLL dl = new DoublyLL();
