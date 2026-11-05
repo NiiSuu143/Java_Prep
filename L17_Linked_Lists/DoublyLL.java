@@ -28,6 +28,21 @@ public class DoublyLL {
         head = newNode;
     }
 
+    // add last 
+    public void addLast(int data) {
+        // create a new node
+        Node newNode = new Node(data);
+        size++;
+        if(head == null) {
+            head = tail = newNode;
+            return ;
+        }
+
+        tail.next = newNode;
+        newNode.prev = tail;
+        tail = newNode;
+    }
+
     // print linked list
     public void print() {
         Node temp = head;
@@ -67,6 +82,7 @@ public class DoublyLL {
         dl.addFirst(3);
         dl.addFirst(2);
         dl.addFirst(1);
+        dl.addLast(6);
 
         dl.print();
         System.out.println("Size = "+size);
