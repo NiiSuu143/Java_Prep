@@ -75,7 +75,7 @@ public class Zig_ZagLL {
     }
     public static void main(String[] args) {
         Zig_ZagLL zz = new Zig_ZagLL();
-        // zz.addFirst(6);
+        zz.addFirst(6);
         zz.addFirst(5);
         zz.addFirst(4);
         zz.addFirst(3);
