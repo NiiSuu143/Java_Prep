@@ -92,7 +92,7 @@ public class DoublyLL {
         }
 
         int val = tail.data;
-        tail.prev.next = null;
+        tail.prev.next = null;  // just need to use prev n
         tail.prev = null;
         size--;
         return val;
