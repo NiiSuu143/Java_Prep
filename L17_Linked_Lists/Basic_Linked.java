@@ -8,6 +8,7 @@ public class Basic_Linked {
          * It implements a doubly linked list, where each element is stored in a node containing the element and references to the previous and next nodes.
          * ************/
         System.out.println("Let's start the linked list");
+        // This one is the inbuilt linked list which is already exist inside the java collection
         LinkedList<Integer> li = new LinkedList<>();
         li.add(1);
         li.add(2);
