@@ -97,6 +97,25 @@ public class DoublyLL {
         size--;
         return val;
     }   
+
+    // reverse Doubly linked list
+    public void reverse() {
+        // 3 variables
+        Node curr = head;
+        Node prev = null;
+        Node next;
+        while(curr != null) {
+            // total 5 steps for the doubly linked list
+            next = curr.next;
+            curr.next = prev;
+            curr.prev = next;   // additional step for 2nd pointer "prev"
+
+            // updation
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
     public static void main(String[] args) {
         DoublyLL dl = new DoublyLL();
         dl.addFirst(5);
@@ -118,6 +137,10 @@ public class DoublyLL {
         dl.removeLast();
         dl.print();
         System.out.println("Size = "+size);
+
+        // reverse doubly linked list
+        dl.reverse();
+        dl.print();
         
     }
 }
