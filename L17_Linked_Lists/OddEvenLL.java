@@ -34,10 +34,16 @@ public class OddEvenLL {
 
     // Segragate Odd and Even in linked list
     public void oddEven() {
+        // if linked list has only 1 node or null
+        if(head == null || head == tail) {
+            return ;
+        }
+
         Node prev = null;
         Node curr = head;
         Node end = tail;
         Node newEnd = tail;
+
 
         // finding odd nodes and linked to tail(newnewEnd)
         while (curr.data % 2 != 0 && curr != end) {
