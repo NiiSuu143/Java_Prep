@@ -41,8 +41,8 @@ public class OddEvenLL {
 
         Node prev = null;
         Node curr = head;
-        Node end = tail;
-        Node newEnd = tail;
+        Node end = tail;    // original tail
+        Node newEnd = tail; // this one is moving pointer
 
 
         // finding odd nodes and linked to tail(newnewEnd)
