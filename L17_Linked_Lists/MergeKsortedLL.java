@@ -18,7 +18,7 @@ public class MergeKsortedLL {
             return b;
         else if (b == null)
             return a;
-        
+
         if (a.data <= b.data) {
             result = a;
             result.next = SortedMerge(a.next, b);
@@ -52,7 +52,6 @@ public class MergeKsortedLL {
 
     public static void main(String[] args) {
         int k = 3;
-        int n = 4;
         Node arr[] = new Node[k];
         arr[0] = new Node(1);
         arr[0].next = new Node(3);
@@ -68,6 +67,11 @@ public class MergeKsortedLL {
         arr[2].next = new Node(9);
         arr[2].next.next = new Node(10);
         arr[2].next.next.next = new Node(11);
+
+        /****************
+         * Time complexity = O(n*logk)
+         * Space complexity = O(n)
+         * *****************/ 
         Node head = mergeKLists(arr, k - 1);
         printList(head);
     }
