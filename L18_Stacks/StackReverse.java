@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class StackReverse {
-    // time complexity -> O(n), SC -> O(1)
+    // time complexity -> O(n), SC -> O(n)
     public static void pushAtBottom(Stack<Integer> s, int data) {
         if (s.isEmpty()) {
             s.push(data);
@@ -13,7 +13,7 @@ public class StackReverse {
         s.push(top);
     }
 
-    // Time complexity -> O(n), SC -> O(1)
+    // Time complexity -> O(n), SC -> O(n)
     public static void reverseStack(Stack<Integer> s) {
         // base case
         if (s.isEmpty()) {
@@ -38,7 +38,7 @@ public class StackReverse {
         s.push(3);
         // 3, 2, 1
 
-        // For this one Tine complexity -> O(n^2) & SC -> O(1)
+        // For this one Tine complexity -> O(n^2) & SC -> O(n)
         reverseStack(s);
 
         // print stack
