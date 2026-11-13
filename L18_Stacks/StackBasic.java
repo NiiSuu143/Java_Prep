@@ -16,6 +16,11 @@ public class StackBasic {
 
         // pop
         public int pop() {
+            // Corner case -> we should add this as if the stack is empty then return -1
+            if(isEmpty()) {
+                return -1;
+            }
+            
             int top = list.get(list.size() - 1);
             list.remove(list.size()-1);
             return top;
@@ -23,6 +28,10 @@ public class StackBasic {
 
         // peek
         public int peek() {
+             // Corner case -> we should add this as if the stack is empty then return -1
+            if(isEmpty()) {
+                return -1;
+            }
             return list.get(list.size()-1);
         }
     }
