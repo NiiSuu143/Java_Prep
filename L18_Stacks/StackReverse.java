@@ -36,12 +36,13 @@ public class StackReverse {
         s.push(1);
         s.push(2);
         s.push(3);
-        // 3, 2, 1
+        s.push(4);
+        // 4, 3, 2, 1
 
         // For this one Tine complexity -> O(n^2) & SC -> O(n)
         reverseStack(s);
 
         // print stack
-        printStack(s);  // 1, 2, 3
+        printStack(s);  // 1, 2, 3, 4
     }
 }
