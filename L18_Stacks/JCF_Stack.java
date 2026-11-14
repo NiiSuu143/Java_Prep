@@ -8,6 +8,7 @@ public class JCF_Stack {
         s.push(2);
         s.push(3);
 
+        // we use peek() or pop() to print the stack in the screen 
         while(!s.isEmpty()) {
             System.out.println(s.peek());
             s.pop();
