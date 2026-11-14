@@ -19,7 +19,7 @@ public class ReverseString {
         return result.toString();
     }
     public static void main(String[] args) {
-        String str = "abc";
+        String str = "arigato gozaimasu";
 
         System.out.println(reverseString(str));
     }
