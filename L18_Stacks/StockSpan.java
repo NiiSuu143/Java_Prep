@@ -16,15 +16,14 @@ public class StockSpan {
                 s.pop();
             }
 
-            // for last one or last stocks
             if(s.isEmpty()) {
-                span[i] = i+1;
+                span[i] = i+1;  // for last one or last stocks
             } else {
-                int prevHigh = s.peek();
+                int prevHigh = s.peek();    // previous high stock
                 span[i] = i - prevHigh;
             }
 
-            s.push(i);   
+            s.push(i);   // push the current price idx to stack
         }
     }
     public static void main(String[] args) {
@@ -34,9 +33,11 @@ public class StockSpan {
         /***************
          * Time Complexity = O(n)
          * Space Complexity = O(n)
+         * Span -> Max. no. of consecutive days of which `price <= today's price`
          * **************/
         stockSpan(stocks, span);
 
+        // to print the span
         for(int i=0; i<span.length; i++) {
             System.out.print(span[i]+ " ");
         }
