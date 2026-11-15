@@ -1,11 +1,12 @@
 import java.util.*;
 
 public class StockSpan {
+    // stock span
     public static void stockSpan(int[] stocks, int[] span) {
         // make a stack to put the index of stocks
         Stack<Integer> s = new Stack<>();
-        span[0] = 1;  
-        s.push(0);
+        span[0] = 1;  // for 1st stock 
+        s.push(0);  // push 0(the index of stock) -> which will become prevHigh
 
         // 
         for(int i=1; i<stocks.length; i++) {
@@ -30,6 +31,10 @@ public class StockSpan {
         int[] stocks = {100, 80, 60, 70, 60, 85, 100};
         int[] span = new int[stocks.length];
 
+        /***************
+         * Time Complexity = O(n)
+         * Space Complexity = O(n)
+         * **************/
         stockSpan(stocks, span);
 
         for(int i=0; i<span.length; i++) {
