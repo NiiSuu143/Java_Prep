@@ -11,17 +11,30 @@ public class DuplicateParenthesis {
             // for closing
             if (ch == ')') {
                 int count = 0;
-                while (s.peek() != '(') {
-                    s.pop();
+                // while (s.peek() != '(') {
+                //     s.pop();
+                //     count++;
+                // }
+                // // check count is less than 1 or not
+                // if (count < 1) {
+                //     return true; // duplicate exist
+                // } else {
+                //     s.pop(); // opening pair
+                // }
+
+                /**************
+                 * we can write this code instead of above commented code
+                 * the direct s.pop() in while loop
+                 * Because, generally s.pop() return its value while deleting
+                 * **************/
+                while (s.pop() != '(') {
                     count++;
                 }
 
                 // check count is less than 1 or not
                 if (count < 1) {
                     return true; // duplicate exist
-                } else {
-                    s.pop(); // opening pair
-                }
+                } 
             } else {
                 // opening
                 s.push(ch);
@@ -32,8 +45,8 @@ public class DuplicateParenthesis {
     }
 
     public static void main(String[] args) {
-        // String str = "(((a+b))+(c+d))";
-        String str = "((a+b)+(c+d))";
+        String str = "(((a+b))+(c+d))";
+        // String str = "((a+b)+(c+d))";
         System.out.println(isDuplicate(str));
     }
 }
