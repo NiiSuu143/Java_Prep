@@ -11,6 +11,7 @@ public class DuplicateParenthesis {
             // for closing
             if (ch == ')') {
                 int count = 0;
+                // // This one is called explicit approach 
                 // while (s.peek() != '(') {
                 //     s.pop();
                 //     count++;
@@ -26,6 +27,7 @@ public class DuplicateParenthesis {
                  * we can write this code instead of above commented code
                  * the direct s.pop() in while loop
                  * Because, generally s.pop() return its value while deleting
+                 * This one is calle implicit approach
                  * **************/
                 while (s.pop() != '(') {
                     count++;
