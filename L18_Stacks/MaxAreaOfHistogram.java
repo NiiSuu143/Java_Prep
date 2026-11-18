@@ -37,7 +37,7 @@ public class MaxAreaOfHistogram {
             s.push(i);
         }
 
-        // current area :
+        // current area : width = j-i-1 = nsr[i] - nrl[i] -1
        for(int i=0; i<arr.length; i++) {
         int height = arr[i];
         int width = nsr[i] - nsl[i] - 1;
