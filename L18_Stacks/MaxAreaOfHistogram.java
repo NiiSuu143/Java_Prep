@@ -1,14 +1,16 @@
 import java.util.Stack;
 
 public class MaxAreaOfHistogram {
+    /************
+     * Maximum area or rectangle of Histogram => O(n)
+     * ****************/
     public static void maxArea(int arr[]) {
         int maxArea = 0;
         int nsr[] = new int[arr.length]; // next smaller right
         int nsl[] = new int[arr.length]; // next smaller left
 
-        // next smaller right
+        // next smaller right -> O(n)
         Stack<Integer> s = new Stack<>();
-
         for (int i = arr.length - 1; i >= 0; i--) {
             while (!s.isEmpty() && arr[s.peek()] >= arr[i]) {
                 s.pop();
@@ -22,8 +24,8 @@ public class MaxAreaOfHistogram {
             s.push(i);
         }
 
-        // next smaller left
-        s = new Stack<>();
+        // next smaller left -> O(n)
+        s = new Stack<>(); // need to empty stack for furthur use
         for (int i = 0; i < arr.length; i++) {
             while (!s.isEmpty() && arr[s.peek()] >= arr[i]) {
                 s.pop();
@@ -37,7 +39,7 @@ public class MaxAreaOfHistogram {
             s.push(i);
         }
 
-        // current area : width = j-i-1 = nsr[i] - nrl[i] -1
+        // current area : width = j-i-1 = nsr[i]-nrl[i]-1  => O(n)
        for(int i=0; i<arr.length; i++) {
         int height = arr[i];
         int width = nsr[i] - nsl[i] - 1;
@@ -46,7 +48,7 @@ public class MaxAreaOfHistogram {
        }
 
         // print maxArea
-        System.out.println("Area of largest rectangle = " + maxArea);
+        System.out.println("Maximum area of Histogram = " + maxArea);
     }
 
     public static void main(String[] args) {
