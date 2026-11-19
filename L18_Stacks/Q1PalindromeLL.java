@@ -47,6 +47,11 @@ public class Q1PalindromeLL {
 
     // overall time complexity -> O(n)
     public static boolean isPalindrome(Q1PalindromeLL list) {
+        // if list is empty
+        if(head == null && head.next == null) {
+            return true;
+        }
+
         Stack<Character> s = new Stack<>();
         Node temp = head;
         Node midNode = getMid(list);
