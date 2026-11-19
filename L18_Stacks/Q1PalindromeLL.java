@@ -34,6 +34,7 @@ public class Q1PalindromeLL {
         System.out.println("null");
     }
 
+    // O(n)
     public static Node getMid(Q1PalindromeLL list) {
         Node slow = head;
         Node fast = head;
@@ -44,6 +45,7 @@ public class Q1PalindromeLL {
         return slow;
     }
 
+    // overall time complexity -> O(n)
     public static boolean isPalindrome(Q1PalindromeLL list) {
         Stack<Character> s = new Stack<>();
         Node temp = head;
@@ -59,7 +61,7 @@ public class Q1PalindromeLL {
         }
 
         while(!s.empty()) {
-            if(temp == null || s.pop() != temp.data) {  
+            if(temp == null || s.pop() != temp.data) {  // temp == null conditon is must used in first bcoz is is used as a safety guard
                 return false;
             } 
             // s.pop();    // we can write this pop() instead of s.peek() in above if condition
