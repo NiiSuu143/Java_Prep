@@ -1,15 +1,17 @@
 import java.util.Stack;
 
 public class SimplifyPath {
+    // overall time complexity of simplifyPath is O(n)
     public static String simplifyPath(String str) {
         Stack<String> s = new Stack<>();
         /*************
          * .split("/") -> it automatically cut the string to many parts 
          * ie. "/" acts as a separater.... 
+         * time complexity of split("/") -> O(n)
          * *************/
         String[] strArr = str.split("/");   // it always start with "" for this case
 
-        for(String part : strArr) {
+        for(String part : strArr) { // O(n)
             if(part.equals("") || part.equals(".")) {
                 // skip empty string and curr dir
                 continue;
@@ -29,7 +31,7 @@ public class SimplifyPath {
             return "/";
         }
 
-        // if stack is not empty then
+        // by using stringBuilder -> O(n)
         StringBuilder result = new StringBuilder();
         for(String dir : s) {
             result.append("/").append(dir);
