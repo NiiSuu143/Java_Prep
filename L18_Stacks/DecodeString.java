@@ -12,21 +12,20 @@ public class DecodeString {
 
             if(Character.isDigit(ch)) {
                 count = count * 10 + (ch - '0');    // string to interger by using ascii code
-                integerStack.push(count);
             } else if(ch == '[') {
-                integerStack.push(count);
-                stringStack.push(currString);
-                count = 0;
-                currString = new StringBuilder();
+                integerStack.push(count); // push count to integerStack
+                stringStack.push(currString);   // push currString to stringStack
+                count = 0;  // reset count for inner box
+                currString = new StringBuilder();   // reset currString for inner new char.
             } else if(ch == ']') {
-                int repeatTimes = integerStack.pop();
-                StringBuilder decoded = stringStack.pop();
+                int repeatTimes = integerStack.pop();   // pop the repeated time form integerStack
+                StringBuilder decoded = stringStack.pop();  // pop the outer one char. which is in paused
                 for(int j=0; j<repeatTimes; j++) {
-                    decoded.append(currString);
+                    decoded.append(currString); // append to the new StringBuilder decoded as the string box is decoded
                 }
-                currString = decoded;
+                currString = decoded;   // put the decoded one to currString 
             } else {
-                currString.append(ch);
+                currString.append(ch);  // if the ch = normal char then append to currString
             }
         }
 
