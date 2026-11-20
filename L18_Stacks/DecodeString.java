@@ -1,6 +1,11 @@
 import java.util.Stack;
 
 public class DecodeString {
+    /**************
+     * Time complexity is O(L)
+     * where L is the no. of length of the decoded string at the last
+     * because when decoded the process is also increased...
+     * *******************/
     public static String decoding(String str) {
         Stack<Integer> integerStack = new Stack<>();
         Stack<StringBuilder> stringStack = new Stack<>();
