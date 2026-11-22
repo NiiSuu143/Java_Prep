@@ -19,7 +19,7 @@ public class CircularQueueB {
 
         // isFull
         public boolean isFull() {
-            return (rear + 1) % size == front;
+            return (rear + 1) % size == front;  // when (rear+1)%size == front then it is full queue
         }
 
         // add -> O(1)
@@ -69,10 +69,20 @@ public class CircularQueueB {
     }
 
     public static void main(String[] args) {
-        Queue q = new Queue(5);
+        Queue q = new Queue(3);
         q.add(1);
         q.add(2);
         q.add(3);
+        // [1] [2] [3]
+
+        // // this line should return "Queue is full"
+        // q.add(4);   
+
+        System.out.println(q.remove()); // [ ] [2] [3]
+        q.add(4);   // [4] [2] [3]
+        System.out.println(q.remove()); // [4] [ ] [3]
+        q.add(5);   // [4] [5] [3] where 5 -> rear & 3 -> front
+        System.out.println();
 
         while(!q.isEmpty()) {
             System.out.println(q.peek());
