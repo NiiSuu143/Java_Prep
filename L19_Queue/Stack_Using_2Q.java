@@ -10,7 +10,7 @@ public class Stack_Using_2Q {
             return q1.isEmpty() && q2.isEmpty();
         }
 
-        // add
+        // add stack -> O(1)
         public void push(int data) {
             if(!q1.isEmpty()) {
                 q1.add(data);
@@ -19,7 +19,7 @@ public class Stack_Using_2Q {
             }
         }
 
-        // pop
+        // pop stack -> O(n)
         public int pop() {
             if (isEmpty()) {
                 System.out.println("Stack is empty");
@@ -49,6 +49,7 @@ public class Stack_Using_2Q {
             return top;
         }
 
+        // peek stack -> O(n)
         public int peek() {
             if (isEmpty()) {
                 System.out.println("Stack is empty");
