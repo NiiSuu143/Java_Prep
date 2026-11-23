@@ -23,7 +23,7 @@ public class QueueUsingLinkedList {
          * linked list -> has no fixed size
          * *********/ 
 
-        // add 
+        // add -> O(n)
         public void add(int data) {
             // create newNode
             Node newNode = new Node(data);
@@ -36,7 +36,7 @@ public class QueueUsingLinkedList {
             tail = newNode;
         }
 
-        // remove
+        // remove -> O(n)
         public int remove() {
             if(isEmpty()) {
                 System.out.println("Queue is empty");
@@ -54,7 +54,7 @@ public class QueueUsingLinkedList {
             return front;
         }
 
-        // peek 
+        // peek -> O(n)
         public int peek() {
              if(isEmpty()) {
                 System.out.println("Queue is empty");
