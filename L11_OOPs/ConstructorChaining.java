@@ -12,6 +12,7 @@ public class ConstructorChaining {
          * *********/
         // calls parameterized constructor 4
         Derived obj = new Derived("test");
+        obj.print();
         // Calls No-argument constructor
         // Derived obj = new Derived();
 
@@ -80,6 +81,10 @@ class Derived extends Base {
         // invokes base class constructor 2
         super(name);
         System.out.println("Calling parameterized constructor of derived");
+    }
+
+    void print() {
+        System.out.println("Hii.... Onamaiwa Sunanda desu...");
     }
 }
 
