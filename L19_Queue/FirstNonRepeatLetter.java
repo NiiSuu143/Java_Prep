@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class FirstNonRepeatLetter {
+    // time complexity -> O(n)
     public static void getFirst_NonRepeating_Letter(String str) {
         Queue<Character> q = new LinkedList<>();
         int freq[] = new int[26];
