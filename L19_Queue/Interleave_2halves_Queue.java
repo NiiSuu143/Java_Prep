@@ -9,7 +9,7 @@ public class Interleave_2halves_Queue {
 
         int size = q.size()/2;  // half of q.size()
         // add first halve to the first queue
-        for(int i=0; i<size; i++) {
+        for(int i=0; i<size; i++) { // dont put q.size() directly to the for loop because we will put element at original queue q
             first.add(q.remove());
         }
 
