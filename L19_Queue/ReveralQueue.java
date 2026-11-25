@@ -7,6 +7,7 @@ public class ReveralQueue {
             s.push(q.remove());
         }
 
+        // pop() from stack and add to the original queue q
         while(!s.isEmpty()) {
             q.add(s.pop());
         }
