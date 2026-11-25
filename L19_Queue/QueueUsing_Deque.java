@@ -8,12 +8,12 @@ public class QueueUsing_Deque {
             return deque.isEmpty();
         }
 
-        // add()
+        // add() -> O(1)
         public void add(int data) {
             deque.addLast(data);
         }
 
-        // remove()
+        // remove() -> O(1)
         public int remove() {
             if(deque.isEmpty()) {
                 System.out.println("Queue is empty...");
@@ -22,7 +22,7 @@ public class QueueUsing_Deque {
             return deque.removeFirst();
         }
 
-        // peek() 
+        // peek() -> O(1)
         public int peek() {
             if(deque.isEmpty()) {
                 System.out.println("Queue is empty...");
