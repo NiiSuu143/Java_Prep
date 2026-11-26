@@ -2,10 +2,11 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Arrays;
 public class MaxOfAll_Subarray_Size_K {
+    // Slinding Window Maximum -> O(n)
     public static int[] maxOfAll(int N, int K, int[] arr) {
         Deque<Integer> dq = new LinkedList<>();
 
-        int result[] = new int[N-K+1];
+        int result[] = new int[N-K+1];  // +1 because we slide window of size k till the end
         int resIdx = 0;
 
         for(int i=0; i<N; i++) {
