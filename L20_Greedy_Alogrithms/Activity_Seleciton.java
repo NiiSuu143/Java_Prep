@@ -2,19 +2,20 @@ import java.util.*;
 import java.util.Arrays;
 
 public class Activity_Seleciton {
-    public static void main(String[] args) {    // O(n)
+    public static void main(String[] args) {    // O(nlogn)
         int[] start = {1, 3, 0, 5, 8, 5};
         int[] end = {2, 4, 6, 7, 9, 9};
 
         // if there is given an unsorted end time then
-        // difinitely need sorting
-        int activities[][] = new int[start.length][3];
+        // doubly array for storing index, start time & end time
+        int activities[][] = new int[start.length][3];  
         for(int i=0; i<start.length; i++) {
             activities[i][0] = i;   // store index
             activities[i][1] = start[i];    // store start time
             activities[i][2] = end[i];  // store end time
         }
         
+        // difinitely need sorting
         // lambda function -> shortform
         Arrays.sort(activities, Comparator.comparingDouble(o -> o[2]));
 
